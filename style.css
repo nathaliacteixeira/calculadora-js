@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.calculadora{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+}
+
+h3, input, label, select, option, button, p{
+    margin-bottom: 20px;
+}
+
+input[type='text']{
+    border:none;
+    background: #BDBDBD;
+    border-radius: 1rem;
+    padding: 8px 10px;
+}
+input[type='text']:focus-visible {
+    outline: none;
+}
+input[type='text']::placeholder{
+    color:#1d1d1d;
+    font-family: 'Montserrat', sans-serif;
+    font-size:10.5px;
+}
+select{
+    border:none;
+    border-radius: 1rem;
+    padding: 8px 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+button{
+    border: none;
+    padding: 8px 10px;
+    background: linear-gradient(to left, #6839b1, #8253c3);
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    color: white;
+    border-radius: 1rem;
+    transition: all 0.3s ease;
+}
+button:hover{
+    letter-spacing: 0.6px;
+}
+button:focus-visible{
+    outline: none;
+}
+h3, label, p{
+    text-align: center;
+}
+span{
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 0.3;
+    color:#424242;
+}
+
