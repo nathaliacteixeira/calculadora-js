@@ -1,8 +1,8 @@
 function calcular() {
     
-    let n1 = parseFloat(document.getElementById('numero1').value);
-    let n2 = parseFloat(document.getElementById('numero2').value);
-    let operacao = document.getElementById('operacao').value;
+    let n1 = parseFloat(document.querySelector('#numero1').value);
+    let n2 = parseFloat(document.querySelector('#numero2').value);
+    let operacao = document.querySelector('#operacao').value;
     let result = 0;
 
     // Valida os números 
@@ -22,8 +22,12 @@ function calcular() {
             result = (n1 * n2);
             break;
         case '/':
-            result = (n1 / n2);
+            if(n2 != 0){
+                result = (n1 / n2);
+            }else{
+                alert("Digite um número maior que 0 para o segundo valor!");
+            }
             break;
     }
-    document.getElementById('resultado').innerHTML = result.toFixed(2);
+    document.querySelector('#resultado').innerHTML = result.toFixed(2);
 }   
