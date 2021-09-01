@@ -28,6 +28,24 @@ function calcular() {
                 alert("Digite um número maior que 0 para o segundo valor!");
             }
             break;
+        case 0:
+            alert("Selecione um aoperação!");
+            return;
+        default:
+            alert("Operação invalida!");
+            return;
     }
     document.querySelector('#resultado').innerHTML = result.toFixed(2);
 }   
+
+function limpar(){
+    let n1 = document.querySelector('#numero1');
+    let n2 = document.querySelector('#numero2');
+    let operacao = document.querySelector('#operacao');
+    let result = document.querySelector('#resultado');
+
+    n1.value  = '';
+    n2.value  = '';
+    operacao.value  = 0;
+    result.innerHTML  = '';
+}
